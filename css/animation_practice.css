@@ -1,0 +1,86 @@
+/* this is where all of your CSS styles go */
+
+html,body{
+	width:100%; 
+	height:100%;
+}
+
+.grid_container{
+	width:1000px;
+	height:500px;
+	position: relative;
+	left: 50%;
+	top:48%;
+	margin-top: -50px;
+	margin-bottom:-100px;
+}
+
+.mono{
+	font-family: 'Fjalla One';
+	font-size: 6em;
+	float: left;
+	margin-left: 5px;
+	position: relative;
+	left: 0px;
+	top: 0px;
+}
+
+@keyframes e_move{
+	from {
+		transform: rotate(0deg) 
+		translate(-150px);
+	}
+	to {
+		transform: rotate(360deg) 
+		translate(-150px);
+	}
+}
+
+.e {
+	position: relative;
+	animation: e_move 5s;
+	animation-delay: 1s;
+	transform: translateX(-150px);
+	left: 150px;
+}
+
+.t {
+    -webkit-animation: pulsate 2s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+    opacity: 0.5;
+
+}
+@keyframes pulsate {
+    0% { 
+        opacity: 0.5;
+    }
+    50% { 
+        opacity: 1.0;
+    }
+    100% { 
+        opacity: 0.5;
+    }
+}
+
+@keyframes h_slide {
+	0% { left: 0px; color: black; }
+	100% { left: 250px; color: lime;}
+
+}
+
+.h{
+	position: relative;
+	animation: h_slide 3s forwards;
+	animation-delay: 2s;
+
+
+}
+
+
+
+
+
+
+
+
+
